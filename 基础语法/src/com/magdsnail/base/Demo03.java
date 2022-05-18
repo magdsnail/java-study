@@ -6,7 +6,6 @@ public class Demo03 {
 
     public Demo03 (int num){
         this.num = num;
-
     }
     public static void main(String[] args) {
         Demo03 demo03 = new Demo03(3);
