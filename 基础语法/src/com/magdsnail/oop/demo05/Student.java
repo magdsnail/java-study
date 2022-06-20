@@ -1,4 +1,5 @@
 package com.magdsnail.oop.demo05;
 
-public class Student {
+public class Student extends Person {
+
 }
