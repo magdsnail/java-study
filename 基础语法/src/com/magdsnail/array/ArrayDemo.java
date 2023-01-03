@@ -19,5 +19,8 @@ public class ArrayDemo {
         int[] a = {1,2,3,4};
         int[] b = new int[3];
 
+        int[] totals;
+        
+
     }
 }
