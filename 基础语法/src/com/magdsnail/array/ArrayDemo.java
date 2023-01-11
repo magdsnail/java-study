@@ -15,7 +15,6 @@ public class ArrayDemo {
         nums[7] = 8;
         nums[8] = 9;
         nums[9] = 10;
-
         int[] a = {1,2,3,4};
         int[] b = new int[3];
         
