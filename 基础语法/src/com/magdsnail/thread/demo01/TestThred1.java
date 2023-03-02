@@ -9,7 +9,6 @@ public class TestThred1 extends Thread{
             System.out.println("我在看代码----" + i);
         }
     }
-
     public static void main(String[] args) {
         //main线程 主线程
 
@@ -21,5 +20,6 @@ public class TestThred1 extends Thread{
         for (int i = 0; i < 20; i++) {
             System.out.println("我在学习多线程--" + i);
         }
+
     }
 }
