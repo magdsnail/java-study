@@ -9,8 +9,8 @@ public class Demo06 {
         String name = "magsnaim";
         char x = 'X';
         double pi = 3.14;
-
-
-
+        int bb = 200;
+        int abc = 100;
+        String abcd = "你好";
     }
 }
