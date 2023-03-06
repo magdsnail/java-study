@@ -14,8 +14,6 @@ public class TestDaemon {
         thread.start();//
         new Thread(you).start();
 
-
-
     }
 }
 
