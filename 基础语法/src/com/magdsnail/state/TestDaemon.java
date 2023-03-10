@@ -11,7 +11,7 @@ public class TestDaemon {
         Thread thread = new Thread(god);
         thread.setDaemon(true); //默认是false表示是用户线程 正常的线程都是用户线程
 
-        thread.start();//
+        thread.start();
         new Thread(you).start();
 
     }
