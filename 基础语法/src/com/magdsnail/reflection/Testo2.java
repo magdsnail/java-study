@@ -77,6 +77,10 @@ class User{
         this.age = age;
     }
 
+    private void test() {
+
+    }
+
     @Override
     public String toString() {
         return "User{" +
