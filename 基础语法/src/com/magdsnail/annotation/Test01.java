@@ -25,6 +25,7 @@ public class Test01 extends Object{
     @Deprecated
     public void test() {
         System.out.println("deprecated");
+        System.out.println(System.getProperty("java.class.path"));
     }
 
     @SuppressWarnings("all")

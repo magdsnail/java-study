@@ -32,5 +32,4 @@ public class Test02 {
 //inherited 子类可以继承父类的注解
 @Inherited
 @interface  MyAnnotation{
-
 }
