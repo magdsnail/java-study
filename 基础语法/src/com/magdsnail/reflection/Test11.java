@@ -28,17 +28,29 @@ public class Test11 {
     public static void main(String[] args) throws NoSuchMethodException {
         Method method = Test11.class.getMethod("test01", Map.class, List.class);
 
-
         Type[] genericParameterTypes = method.getGenericParameterTypes();
         for (Type genericParameterType : genericParameterTypes) {
             System.out.println("#"+genericParameterType);
             if(genericParameterType instanceof ParameterizedType) {
-                for (Type actualTypeArgument : ((ParameterizedType) genericParameterType).getActualTypeArguments()) {
-                    
-                }
+                Type[] actualTypeArguments = ((ParameterizedType) genericParameterType).getActualTypeArguments();
 
+                for (Type actualTypeArgument : actualTypeArguments) {
+                    System.out.println(actualTypeArgument);
+                }
             }
         }
+
+        method = Test11.class.getMethod("test02", null);
+        Type genericReturnType = method.getGenericReturnType();
+        if(genericReturnType instanceof ParameterizedType) {
+            Type[] actualTypeArguments = ((ParameterizedType) genericReturnType).getActualTypeArguments();
+
+            for (Type actualTypeArgument : actualTypeArguments) {
+                System.out.println(actualTypeArgument);
+            }
+        }
+
+
     }
 
 
